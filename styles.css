@@ -1131,7 +1131,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 360px) {
+@media (max-width: 400px) {
   .slider-container {
     height: 170px;
     border-radius: 10px;
