@@ -1160,6 +1160,17 @@ flex-wrap: wrap;
   height: 42px;
 
 }
+.menu-item span {
+  bottom: 44px;
+  left: -40%;
+  font-size: 8.5px;
+}
+.rnlg {
+  bottom: 40px !important;
+  left: -60% !important;
+  width: -35px;
+}
+
 .news-card-mobile{
   display: none !important;
 }
@@ -1174,9 +1185,17 @@ flex-wrap: wrap;
   margin-top: 39px;
 } */
 .ad-section {
-  margin-top: 205px;
+  margin-top: 27px;
+  top: 0px;
 }
 
+.ads{
+  margin-top: 340px !important;
+}
+
+.card-3d-wrap {
+  margin-top: 25px;
+}
 .carousel-header{
   flex-direction: column;
 }
@@ -1200,7 +1219,7 @@ flex-wrap: wrap;
 }
 .map-card {
   width: auto;
-  margin: 139px 5px 0 5px;
+  margin: 0 5px 0;
 }
 .slide-img img {
   width: 80%;
