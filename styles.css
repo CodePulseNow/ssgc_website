@@ -737,6 +737,7 @@ body {
   height: 75%;
   display: flex;
   justify-content: center;
+  top: 45px;
 }
 
 .ad-section img {
@@ -1274,4 +1275,3 @@ flex-wrap: wrap;
 
 
 }
-
