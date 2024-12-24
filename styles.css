@@ -18,15 +18,9 @@ body {
   to {
     visibility: hidden;
     box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.664);
-
     transform: scale(1.2);
   }
 }
-/* @-webkit-keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
-} */
 
 .navbar ul li a.active {
   position: relative;
@@ -73,6 +67,16 @@ body {
   color: #1c2b65;
   transform: scale(1.1);
 }
+/* .submenu li a {
+  color: black;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.submenu li a:hover {
+  background-color: #f0f0f0;
+} */
+
 .logo-container {
   display: flex;
   align-items: center;
@@ -100,6 +104,7 @@ body {
 .logo-text span:first-child {
   font-weight: bold;
 }
+
 
 .slider-container {
   width: 100%;
@@ -144,7 +149,7 @@ body {
   border: none;
   padding: 10px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 2;
   border-radius: 50%;
 }
 
@@ -160,7 +165,6 @@ body {
 .next:hover {
   background-color: #03b2b5;
 }
-
 
 .marquee {
   line-height: 50px;
@@ -287,7 +291,6 @@ body {
   align-items: center;
   padding: 40px;
 }
-
 
 #myBtn {
   display: none;
@@ -730,7 +733,6 @@ body {
   font-size: 13px;
 }
 
-
 .ad-section {
   position: relative;
   width: 100%;
@@ -743,7 +745,6 @@ body {
 .ad-section img {
   border-radius: 10px;
 }
-
 
 .locate-us-section {
   /* margin: auto auto 50px auto; */
@@ -828,7 +829,6 @@ body {
   /* margin-left: 841px; */
   top: 20px;
 }
-
 
 .scroll-button {
   position: absolute;
@@ -1133,50 +1133,52 @@ body {
 
 /* Responsive Design */
 @media (max-width: 400px) {
+  main {
+    margin-top: 90px !important;
+  }
   .slider-container {
     height: 170px;
     border-radius: 10px;
-}
-.image-container {
-  flex-direction: column;
-  padding: 20px;
-}
-.image-container img {
-  margin-top: 12px;
-  /* width: auto; */
-  width: 100%;
-  max-width: auto; /* Maximum width */
-  min-width: 0px; /* Minimum width */
-}
-.menu-bar {
-flex-wrap: wrap;
-}
+  }
+  .image-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .image-container img {
+    margin-top: 12px;
+    /* width: auto; */
+    width: 100%;
+    max-width: auto; /* Maximum width */
+    min-width: 0px; /* Minimum width */
+  }
+  .menu-bar {
+    flex-wrap: wrap;
+  }
 
-.menu-item {
-  margin: 3px 20px;
-}
+  .menu-item {
+    margin: 3px 20px;
+  }
 
-.menu-item img {
-  width: 42px;
-  height: 42px;
+  .menu-item img {
+    width: 42px;
+    height: 42px;
+  }
+  .menu-item span {
+    bottom: 44px;
+    left: -40%;
+    font-size: 8.5px;
+  }
+  .rnlg {
+    bottom: 40px !important;
+    left: -60% !important;
+    width: -35px;
+  }
 
-}
-.menu-item span {
-  bottom: 44px;
-  left: -40%;
-  font-size: 8.5px;
-}
-.rnlg {
-  bottom: 40px !important;
-  left: -60% !important;
-  width: -35px;
-}
+  .news-card-mobile {
+    display: none !important;
+  }
 
-.news-card-mobile{
-  display: none !important;
-}
-
-/* .card-3d-wrap {
+  /* .card-3d-wrap {
   position: relative;
   width: 340px;
   max-width: calc(100% - 20px);
@@ -1185,93 +1187,222 @@ flex-wrap: wrap;
   transform-style: preserve-3d;
   margin-top: 39px;
 } */
-.ad-section {
-  margin-top: 27px;
-  top: 0px;
-}
+  .ad-section {
+    margin-top: 27px;
+    top: 0px;
+  }
 
-.ads{
-  margin-top: 340px !important;
-}
+  .ads {
+    margin-top: 340px !important;
+  }
 
-.card-3d-wrap {
-  margin-top: 25px;
-}
-.carousel-header{
-  flex-direction: column;
-}
-.carousel-wrapper {
-  gap: 12px;
-  padding: 0px;
-  flex-wrap: wrap;
-}
+  .card-3d-wrap {
+    margin-top: 25px;
+  }
+  .carousel-header {
+    flex-direction: column;
+  }
+  .carousel-wrapper {
+    gap: 12px;
+    padding: 0px;
+    flex-wrap: wrap;
+  }
 
-#myBtn {
+  #myBtn {
+    /* display: none; */
+    visibility: hidden;
+  }
+  .map-card {
+    width: auto;
+    margin: 0 5px 0;
+  }
+  .slide-img img {
+    width: 80%;
+  }
+
+  .focal-person-info h3,
+  .focal-person-investor h3 {
+    font-size: 11px;
+    margin: 10px 10px 20px 10px;
+  }
+  .focal-persons-section {
+    margin: -32px 22px;
+    padding: 0px;
+  }
+  .card-header {
+    padding: 15px 20px;
+    font-size: 15px;
+  }
+  .card-body p {
+    font-size: 13px;
+    margin: 10px 0;
+  }
+
+  .footer-section p {
+    margin: 13px 0px;
+    font-size: 10.5px;
+    line-height: 17px;
+  }
+  .footer-section {
+    width: auto;
+    margin: 25px 27px -3px 27px;
+  }
+  .footer-content {
+    justify-content: flex-start; 
+  }
+  .footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 10.5px;
+  }
+  .footer-logo {
+    width: 27px;
+    /* height: auto; */
+  }
+  .footer-logo-box p {
+    font-size: small;
+  }
+  .footer-logo-box {
+    width: 86px;
+  }
+
+/* Initially hide the navbar on mobile
+.navbar ul {
   display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 2px;
-  z-index: 99;
-  font-size: 22px;
-  background-color: unset;
-  color: #242121;
-  padding: 0px;
-  border-radius: 4px;
-}
-.map-card {
-  width: auto;
-  margin: 0 5px 0;
-}
-.slide-img img {
-  width: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  flex-direction: column;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0; /* Hidden by default 
+  overflow: hidden;
+  padding: 0;
 }
 
-.focal-person-info h3, .focal-person-investor h3 {
-  font-size: 11px;
-  margin: 10px 10px 20px 10px;
-}
-.focal-persons-section {
-  margin: -32px 22px;
-  padding: 0px;
-}
-.card-header {
-  padding: 15px 20px;
-  font-size: 15px;
-}
-.card-body p {
-  font-size: 13px;
-  margin: 10px 0;
+.navbar ul.visible {
+  display: flex;
+  max-height: 500px; /* Adjust depending on the navbar height 
 }
 
-.footer-section p {
-  margin: 13px 0px;
-  font-size: 10.5px;
-  line-height: 17px;
-}
-.footer-section {
-  width: auto;
-  margin: 25px 27px -3px 27px;
-}
-.footer-content {
-  justify-content: flex-start;
-}
-.footer-section ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 10.5px;
-}
-.footer-logo {
-  width: 27px;
-  /* height: auto; */
-}
-.footer-logo-box p {
-
-  font-size: small;
-}
-.footer-logo-box {
-
-  width: 86px;
+/* Ensure the hamburger button is visible on mobile 
+.hamburger-menu {
+  position: fixed; /* Fix the hamburger to the top 
+  top: 15px; /* Adjust as necessary to position it better 
+  right: 15px; /* Align it to the right 
+  z-index: 60; /* Make sure the hamburger is above the navbar 
+  background-color: transparent; /* Optional: remove background 
+  padding: 10px; /* Adjust padding for better click area 
 }
 
+.hamburger-menu i {
+  font-size: 1.5rem;
+  color: #1c2b65;
+}
+
+/* Make the navbar items appear below the hamburger button 
+.navbar {
+  z-index: 50; /* Lower than the hamburger 
+}
+
+/* Show the navbar items with a transition when visible 
+.navbar ul li {
+  padding: 10px 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.navbar ul li a {
+  display: block;
+  color: #1c2b65;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.navbar ul li a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Language toggle adjustment for mobile 
+.language-toggle {
+  display: flex; /* Ensure the language toggle is visible 
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* Add space between other content and language toggle 
+  padding: 5px;
+  z-index: 50; /* Ensure it's visible on top of other content 
+}
+
+.language-toggle span {
+  font-size: 0.875rem; /* Slightly smaller font for mobile 
+  color: #1c2b65;
+}
+
+.language-toggle label {
+  margin-left: 5px;
+}
+
+.language-toggle .peer-checked:bg-blue-900 {
+  background-color: #00A9F4; /* Adjust background color when checked 
+}
+.navbar{
+  margin-top: 20px;
+} */
+
+   .hidden {
+    display: none !important;
+  }
+  /* #menu-toggle {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #menu.flex-col {
+    background-color: #1c2b65;
+    padding-bottom: 10px;
+  } */
+header div{
+  font-size: 10px;
+}
+ 
+.lpg{
+  font-size: xx-small;
+  padding: 8px;
+}
+.mobile-hide{
+  display: none;
+}
+.logo-text {
+  display: none;
+}
+
+.navbar ul {
+  flex-direction: column;
+  /* background-color: #1c2b65; */
+  position: absolute;
+  top: 60px;
+  left: 145px;
+  width: 58%;
+  /* padding: 10px 0; */
+  background: linear-gradient(45deg, #1c2b65, #03b2b5);
+  /* padding: 30px 0; */
+  border-radius: 5px;
+}
+.navbar ul li {
+  text-align: center;
+  padding: 5px 0;
+}
+.navbar ul li a {
+  font-size: 10px;
+ 
+}
+#menu-btn{
+  order: 4;
+}
 
 }
