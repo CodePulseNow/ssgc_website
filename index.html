@@ -22,97 +22,107 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header class="fixed top-0 left-0 w-full text-sky-900 z-50">
-      <div class="oneee flex  justify-end items-center p-2 bg-white text-sm shadow-md space-x-6 h-7 md:space-y-0  flex-wrap md:flex-nowrap">
-        <!-- Row 1: LPG ORDER, Contact Icons, Social Media -->
-        <div class="flex items-center space-x-4 w-full md:w-auto ">
-          <!-- LPG Order Button -->
-          <a class="text-red-600 font-bold px-4 py-2 text-sm md:text-base blink">
-            LPG ORDER NOW
-          </a>
-    
-          <!-- Contact Icons -->
-          <span class="flex items-center space-x-1 text-sm md:text-base">
-            <i class="fa-solid fa-phone " style="color: #1c2b65"></i>
-            <span class="hidden md:inline">1199, 99021000</span>
+    <header class="fixed top-0 left-0 w-full text-sky-900 z-20">
+      <div
+        class="flex justify-end items-center p-2 text-sm bg-white space-x-6 h-7 shadow-md"
+      >
+        <!-- LPG Order Button -->
+        <a class="lpg text-red-600 font-bold px-4 py-2 blink">LPG ORDER NOW</a>
+
+        <div class="flex items-center space-x-4">
+          <span class="flex items-center space-x-1">
+            <i class="fa-solid fa-phone" style="color: #1c2b65"></i>
+            <span class="mobile-hide">1199, 99021000</span>
           </span>
-    
-          <span class="flex items-center space-x-1 text-sm md:text-base">
+
+          <span class="flex items-center space-x-1">
             <i class="fas fa-envelope" style="color: #1c2b65"></i>
-            <span class="hidden md:inline">info@ssgc.com.pk</span>
+            <span class="mobile-hide">info@ssgc.com.pk</span>
           </span>
-    
+
           <!-- Social Media Icons -->
           <a href="#" class="hover:text-blue-300">
             <i class="fab fa-twitter" style="color: #1c2b65"></i>
           </a>
+
           <a href="#" class="hover:text-blue-300">
             <i class="fab fa-facebook-f" style="color: #1c2b65"></i>
           </a>
-        </div>
-    
-        <!-- Row 2: Hamburger Menu and Language Toggle -->
-        <div class="flex items-center justify-between space-x-2 w-full md:w-auto">
-          <!-- Hamburger Menu for Mobile -->
-          <div class="flex md:hidden">
-            <button class="p-2 text-sky-900 focus:outline-none">
-              <i class="fas fa-bars"></i>
-            </button>
-          </div>
-    
+
           <!-- Language Toggle -->
           <div class="flex items-center space-x-2">
-            <span class="text-sm">English</span>
+            <span>Eng</span>
+
             <label class="relative inline-flex items-center cursor-pointer">
               <input type="checkbox" class="sr-only peer" />
-              <div class="w-10 h-4 bg-gray-300 rounded-full peer-checked:bg-blue-900"></div>
+              <div
+                class="w-10 h-4 bg-gray-300 rounded-full peer-checked:bg-blue-900"
+              ></div>
               <span
                 class="absolute left-0.5 top-0 w-4 h-4 bg-white rounded-full transition-transform peer-checked:translate-x-5"
               ></span>
             </label>
-            <span class="text-sm">Urdu</span>
+
+            <span>Ur</span>
           </div>
         </div>
       </div>
     </header>
-        
-    
-    
-
-    <!-- Navbar Section -->
-    <nav class="navbar fixed top-7 w-full z-40">
-      <div class="logo-container">
-        <div class="logo">
-          <img src="pics/SSGC_Log.png" alt="SSGC logo" class="h-10" />
-        </div>
-        <div class="logo-text">
-          <h1>Service with Smile</h1>
-          <h1 class="uppercase font-bold">Sui Southern Gas Company Limited</h1>
-        </div>
+    <main class="mt-24 ">
+ <!-- Navbar Section -->
+<nav class="navbar fixed top-7 w-full z-20 px-4 md:px-10">
+  <div class="flex justify-between items-center w-full">
+    <!-- Logo Section -->
+    <div class="logo-container flex items-center">
+      <div class="logo">
+        <img src="pics/SSGC_Log.png" alt="SSGC logo" class="h-10" />
       </div>
+      <div class="logo-text hidden md:block">
+        <h1>Service with Smile</h1>
+        <h1 class="uppercase font-bold">Sui Southern Gas Company Limited</h1>
+      </div>
+    </div>
 
-      <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Financial Highlights</a></li>
-        <li><a href="#">Customer Management</a></li>
-        <li><a href="#">Investor Info</a></li>
-        <li><a href="#">New Connection</a></li>
-        <li><a href="#">Tenders</a></li>
-        <li><a href="#">Media Center</a></li>
-        <li><a href="#">Helpline</a></li>
-        <li><a href="#">R&D Dept</a></li>
-      </ul>
+    <!-- Hamburger Menu Button -->
+    <button id="menu-btn" class="block md:hidden text-white text-2xl focus:outline-none">
+      <i class="fas fa-bars"></i>
+    </button>
 
-      <i class="fas fa-search mr-10 top-13 text-blue-100"></i>
-    </nav>
+    <!-- Navbar Links -->
+    <ul id="menu" class="hidden md:flex flex-col md:flex-row ">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Financial Highlights</a></li>
+      <li><a href="#">Customer Management</a></li>
+      <li><a href="#">Investor Info</a></li>
+      <li><a href="#">New Connection</a></li>
+      <li><a href="#">Tenders</a></li>
+      <li><a href="#">Media Center</a></li>
+      <li><a href="#">Helpline</a></li>
+      <li><a href="#">R&D Dept</a></li>
+    </ul>
+
+    <!-- Search Section -->
+    <div class="search-container  md:block relative">
+      <input
+        type="text"
+        class="border border-gray-300 rounded-full px-2 py-1 text-sm"
+        placeholder="Search..."
+        style="width: 150px;"
+      />
+      <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-sky-900">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+  </div>
+</nav>
 
     <!-- Main Content Section -->
-    <main class="mt-24">
+    <main class="mt-24 md:mt-16">
       <div class="slider-container top-2">
         <div class="slider" id="slider">
           <!-- Duplicate last slide for smooth transition -->
@@ -155,7 +165,7 @@
 
       <div class="marquee">
         <p>CONICAL BAFFLE INSTALLATION CHARGES</p>
-      </div>   
+      </div>
 
       <div class="menu-bar">
         <!-- Careers -->
@@ -271,7 +281,7 @@
           class="rounded-3xl shadow-md shadow-black"
         />
       </div>
- 
+
       <button onclick="topFunction()" id="myBtn" title="Go to top">
         &#11161;
       </button>
@@ -990,6 +1000,14 @@
           });
         });
       });
+      console.clear();
+
+      const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
     </script>
   </body>
 </html>
