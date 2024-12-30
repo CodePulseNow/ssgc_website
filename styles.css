@@ -1463,11 +1463,15 @@ header div{
   display: none;
 }
 
-.marquee{
-  overflow: visible;
+
+.marquee {
+  margin-left: 20px; /* Adjust left margin */
+  margin-right: 20px; /* Adjust right margin */
 }
+
 .marquee p {
-  animation: marquee 4s linear infinite;
+  font-size: 14px; /* Optional: Adjust font size for better readability */
+  animation: marquee 5s linear infinite;
 }
 }
 
