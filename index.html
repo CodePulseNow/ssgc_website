@@ -11,7 +11,10 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome for social icons -->
-
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -72,57 +75,382 @@
         </div>
       </div>
     </header>
-    <main class="mt-24 ">
- <!-- Navbar Section -->
-<nav class="navbar fixed top-7 w-full z-20 px-4 md:px-10">
-  <div class="flex justify-between items-center w-full">
-    <!-- Logo Section -->
-    <div class="logo-container flex items-center">
-      <div class="logo">
-        <img src="pics/SSGC_Log.png" alt="SSGC logo" class="h-10" />
+
+    <!-- Navbar Section -->
+    <nav class="fixed top-7 w-full z-20 px-4">
+      <div class="navbar">
+        <i class="bx bx-menu"></i>
+        <div class="logo-container flex items-center">
+          <div class="logo">
+            <img src="pics/SSGC_Log.png" alt="SSGC logo" class="h-10" />
+          </div>
+          <div class="logo-text hidden md:block">
+            <h6>Service with Smile</h6>
+            <h6 class="uppercase font-bold">
+              Sui Southern Gas Company Limited
+            </h6>
+          </div>
+        </div>
+        <!-- <div class="logo"><a href="#"> <img src="./pics/SSGC_Log.png" alt="" srcset="" class="h-10"> </a></div> -->
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name">SSGC</span>
+            <i class="bx bx-x"></i>
+          </div>
+          <ul class="links">
+            <li><a href="#">HOME</a></li>
+            <li>
+              <a href="#">About Us</a>
+              <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Core Values</a></li>
+                <li><a href="#">Meter Manufacturing Plant</a></li>
+                <li class="more">
+                  <span
+                    ><a href="#">Board of Directors and Management</a>
+                    <i class="bx bxs-chevron-right arrow more-arrow"></i>
+                  </span>
+                  <ul class="more-sub-menu sub-menu">
+                    <li><a href="#">Board Of Directors</a></li>
+                    <li><a href="#">Chairperson,MD,And DMDs</a></li>
+                    <li><a href="#">Senior General Managers</a></li>
+                    <li><a href="#">General Managers</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Company Officer</a></li>
+                <li class="more">
+                  <span
+                    ><a href="#">Policies</a>
+                    <i class="bx bxs-chevron-right arrow more-arrow1"></i>
+                  </span>
+                  <ul class="more-sub-menu1 sub-menu">
+                    <li>
+                      <a href="#">Business Principles And Ethics policy</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        >Health,Safety,Environment,And Quality Assuarance
+                        Policy</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    >Focal Person as per Right of Access to Information ACT
+                    2017</a
+                  >
+                </li>
+                <li class="more">
+                  <span
+                    ><a href="#">Gas Transportation</a>
+                    <i class="bx bxs-chevron-right arrow more-arrow2"></i>
+                  </span>
+                  <ul class="more-sub-menu2 sub-menu">
+                    <li><a href="#">Pakistan Gas Network Code</a></li>
+                    <li><a href="#">Pakistan Gas Network Code-Amendment</a></li>
+                    <li>
+                      <a href="#"
+                        >License For Transmission,Distribution, And Sale Of
+                        Natural Gas</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">Capacity information-Gas Transmission</a>
+                    </li>
+                    <li>
+                      <a href="#">Capacity information-Distribution Karachi</a>
+                    </li>
+                    <li>
+                      <a href="#">Capacity information-Distribution Sindh</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        >Capacity information-Distribution Balochistan</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">List of Focal Persons</a></li>
+                <li>
+                  <a href="#"
+                    >Complaint types & Estimates resolution timeline</a
+                  >
+                </li>
+                <li><a href="#">Bill Payment</a></li>
+                <li><a href="#">Bill Advertisement</a></li>
+                <li><a href="#">Grievance Redressal Committee (GRC)</a></li>
+                <li><a href="#">Environmental Impact Assessment RLNG-II</a></li>
+                <li><a href="#">RLNG Form</a></li>
+                <li><a href="#">RLNG FOrm for Special Economic Zone</a></li>
+                <li>
+                  <a href="#"
+                    >Public Sector Companies (Appointment of Chief Executive )
+                    Guidelines,2015</a
+                  >
+                </li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Financial Highlights</a>
+              <i class="bx bxs-chevron-down js-arrow arrow"></i>
+
+              <ul class="js-sub-menu sub-menu">
+                <li><a href="#">Ten Years At A Glance</a></li>
+                <li><a href="#">Financial Reports</a></li>
+                <li><a href="#">SECP Compliance Certificate</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Customer Management</a>
+              <!-- <i class="bx bxs-chevron-down js-arrow arrow"></i> -->
+              <i class="bx bxs-chevron-down htmlcss-arrow2 arrow"></i>
+
+              <!-- <ul class="js-sub-menu sub-menu"> -->
+              <ul class="htmlCss-sub-menu2 sub-menu">
+                <li><a href="#">New Gas Connection Application Form</a></li>
+                <li><a href="#">Digital Services</a></li>
+                <li class="more">
+                  <span
+                    ><a href="#">Domestic Services</a>
+                    <i class="bx bxs-chevron-right arrow more-arrow3"></i>
+                  </span>
+                  <ul class="more-sub-menu3 sub-menu">
+                    <li><a href="#">Domestic Rates</a></li>
+                    <li><a href="#">Domestic Connection Form</a></li>
+                    <li>
+                      <a href="#">Domestic Connection Contract</a>
+                    </li>
+                    <li>
+                      <a href="#">RLNG Contract-Domestic</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="more">
+                  <span
+                    ><a href="#">Commercial Services</a>
+                    <i class="bx bxs-chevron-right arrow more-arrow4"></i>
+                  </span>
+                  <ul class="more-sub-menu4 sub-menu">
+                    <li><a href="#">Commercial Rates</a></li>
+                    <li><a href="#">Commercial Connection Form</a></li>
+                    <li>
+                      <a href="#">Commercial Connection Contract</a>
+                    </li>
+                    <li>
+                      <a href="#">RLNG Contract-Commercial</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="more">
+                  <span
+                    ><a href="#">Industrial Services</a>
+                    <i class="bx bxs-chevron-right arrow more-arrow5"></i>
+                  </span>
+                  <ul class="more-sub-menu5 sub-menu">
+                    <li><a href="#">Industrial Rates</a></li>
+                    <li><a href="#">Industrial Connection Form</a></li>
+                    <li>
+                      <a href="#">Industrial Connection Contract</a>
+                    </li>
+                    <li>
+                      <a href="#">RLNG Contract-Industrial</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    >Process of Gas
+                    Connection(Domestic/Commercial/Industrial)</a
+                  >
+                </li>
+                <li><a href="#">LPG Air-Mix</a></li>
+                <li><a href="#">RLNG Provisional Price</a></li>
+                <li><a href="#">View Bill</a></li>
+                <li><a href="#">Consumer Service Manual</a></li>
+                <li><a href="#">Domestic Bill Calculation</a></li>
+                <li><a href="#">Calculation of SSGC Domestic Gas Vill</a></li>
+                <li><a href="#">Frequently Asked Questions (FAQs)</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Investor Info</a>
+              <i class="bx bxs-chevron-down htmlcss-arrow3 arrow"></i>
+              <ul class="htmlCss-sub-menu3 sub-menu">
+                <li class="more">
+                  <span
+                    ><a href="#">Compliance with SOE Act</a>
+                    <i class="bx bxs-chevron-right arrow more-arrow6"></i>
+                  </span>
+                  <ul class="more-sub-menu6 sub-menu">
+                    <li><a href="#">Statement of Corporate Intent</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Draft Minutes of the 68th General Meeting</a>
+                </li>
+
+                <li class="more">
+                  <span
+                    ><a href="#">69th Annual General Meeting</a>
+                    <i class="bx bxs-chevron-right arrow more-arrow7"></i>
+                  </span>
+                  <ul class="more-sub-menu7 sub-menu">
+                    <li>
+                      <a href="#">Notice of the 69th Annual General Meeting</a>
+                    </li>
+                    <li><a href="#">Form of the Proxy</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Election of Directors 2024</a></li>
+
+                <li class="more">
+                  <span
+                    ><a href="#">Corporate Briefing Session (CBS)</a>
+                    <i class="bx bxs-chevron-right arrow more-arrow8"></i>
+                  </span>
+                  <ul class="more-sub-menu8 sub-menu">
+                    <li><a href="#">Corporate Briefing Session (CBS)</a></li>
+                    <li><a href="#">Corporate Briefing Zoom Link</a></li>
+                    <li>
+                      <a href="#">Corporate Briefing Presentation</a>
+                    </li>
+                    <li>
+                      <a href="#">Corporate Briefing Video</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    >Consent for Electronic Transmission of Annual Audited
+                    Finanacial Statements</a
+                  >
+                </li>
+                <li>
+                  <a href="#">Contact for Investement Assistance Grievance</a>
+                </li>
+                <li>
+                  <a href="#">Categories of Shareholders As Of 30 June 2023</a>
+                </li>
+                <li><a href="#">Credit Rating</a></li>
+                <li><a href="#">Dividend Mendate Form</a></li>
+                <li><a href="#">Financial Reports</a></li>
+                <li><a href="#">Important Circulars/Notifications</a></li>
+                <li><a href="#">Investors Relation</a></li>
+                <li>
+                  <a href="#"
+                    >Conversion of Physical Shares of SSGCL into Book-Entry
+                    Form</a
+                  >
+                </li>
+                <li>
+                  <a href="#">Pattern of Shareholding As Of 30 June 2023</a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Scruntinizer Reports For AGM 2022 Held on 29 December
+                    2023</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">New Connection</a>
+              <i class="bx bxs-chevron-down htmlcss-arrow4 arrow"></i>
+
+              <ul class="htmlCss-sub-menu4 sub-menu">
+                <li><a href="#">Apply For Commercial Gas Connection</a></li>
+                <li><a href="#">Apply For Industrial Connection</a></li>
+
+                <li>
+                  <a href="#"
+                    >New Domestic & Commercial Gas Connection Application
+                    Processing</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Tenders</a>
+
+              <i class="bx bxs-chevron-down htmlcss-arrow5 arrow"></i>
+
+              <ul class="htmlCss-sub-menu5 sub-menu">
+                <li><a href="#">Active Tenders </a></li>
+                <li><a href="#">Most Procures Material </a></li>
+                <li><a href="#">Tender Evaluations </a></li>
+                <li><a href="#">Blacklisted Firms </a></li>
+                <li><a href="#">Blacklisting mechanism </a></li>
+                <li><a href="#">Annual Procurement plan 2020-21</a></li>
+                <li><a href="#">Annual Procurement plan 2021-22</a></li>
+                <li><a href="#">Annual Procurement plan 2022-23</a></li>
+                <li><a href="#">Annual Procurement plan 2023-24</a></li>
+                <li><a href="#">Annual Procurement plan 2024-25</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Media Center</a>
+
+              <i class="bx bxs-chevron-down htmlcss-arrow6 arrow"></i>
+
+              <ul class="htmlCss-sub-menu6 sub-menu">
+                <li><a href="#">Notifications </a></li>
+                <li><a href="#">Flame Magzine </a></li>
+                <li><a href="#">Advertisements </a></li>
+                <li><a href="#">Social Media </a></li>
+                <li><a href="#">Press Releases </a></li>
+                <li><a href="#">Events </a></li>
+                <li><a href="#">News </a></li>
+                <li><a href="#">Operation Grift Updates</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Helpline</a>
+
+              <i class="bx bxs-chevron-down htmlcss-arrow7 arrow"></i>
+
+              <ul class="htmlCss-sub-menu7 sub-menu">
+                <li><a href="#">How Customers Can Complain </a></li>
+                <li>
+                  <a href="#"
+                    >Complaint Types And Estimated Resolution Timelines</a
+                  >
+                </li>
+                <li><a href="#">Federal Ombudsman Numbers </a></li>
+                <li><a href="#">Public Complaints Resolution Mechanism </a></li>
+                <li><a href="#">Complaints/Feedback </a></li>
+                <li><a href="#">Important Numbers </a></li>
+                <li><a href="#">Customer Facilitation Centers </a></li>
+                <li><a href="#">Check Gas Line For Leqakages </a></li>
+                <li><a href="#">Safety Education </a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">R&D Dept</a>
+              <i class="bx bxs-chevron-down htmlcss-arrow8 arrow"></i>
+
+              <ul class="htmlCss-sub-menu8 sub-menu">
+                <li><a href="#">Let's Work Together</a></li>
+                <li><a href="#">R&D Collaboration With Acedemia</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="search-box">
+          <i class="bx bx-search"></i>
+          <div class="input-box">
+            <input type="text" placeholder="Search..." />
+          </div>
+        </div>
       </div>
-      <div class="logo-text hidden md:block">
-        <h1>Service with Smile</h1>
-        <h1 class="uppercase font-bold">Sui Southern Gas Company Limited</h1>
-      </div>
-    </div>
-
-    <!-- Hamburger Menu Button -->
-    <button id="menu-btn" class="block md:hidden text-white text-2xl focus:outline-none">
-      <i class="fas fa-bars"></i>
-    </button>
-
-    <!-- Navbar Links -->
-    <ul id="menu" class="hidden md:flex flex-col md:flex-row ">
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Financial Highlights</a></li>
-      <li><a href="#">Customer Management</a></li>
-      <li><a href="#">Investor Info</a></li>
-      <li><a href="#">New Connection</a></li>
-      <li><a href="#">Tenders</a></li>
-      <li><a href="#">Media Center</a></li>
-      <li><a href="#">Helpline</a></li>
-      <li><a href="#">R&D Dept</a></li>
-    </ul>
-
-    <!-- Search Section -->
-    <div class="search-container  md:block relative">
-      <input
-        type="text"
-        class="border border-gray-300 rounded-full px-2 py-1 text-sm"
-        placeholder="Search..."
-        style="width: 150px;"
-      />
-      <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-sky-900">
-        <i class="fas fa-search"></i>
-      </button>
-    </div>
-  </div>
-</nav>
+    </nav>
 
     <!-- Main Content Section -->
-    <main class="mt-24 md:mt-16">
+    <main class="mt-28 md:mt-24">
       <div class="slider-container top-2">
         <div class="slider" id="slider">
           <!-- Duplicate last slide for smooth transition -->
@@ -297,7 +625,7 @@
           <div
             class="carousel-news-arrows col-12 col-md-6 d-flex justify-content-center"
           >
-            <div class="arrow older-news" onclick="loadOlderNews()">
+            <div class="news-arrow older-news" onclick="loadOlderNews()">
               &#10094;
             </div>
 
@@ -307,7 +635,7 @@
               <span class="dot"></span>
             </div>
 
-            <div class="arrow newer-news" onclick="loadNewerNews()">
+            <div class="news-arrow newer-news" onclick="loadNewerNews()">
               &#10095;
             </div>
           </div>
@@ -693,7 +1021,7 @@
           </div>
 
           <!-- Links Section -->
-          <div class="footer-section links">
+          <div class="footer-section footer-links">
             <h3 class="footer-heading">Links</h3>
             <ul>
               <li>
@@ -790,7 +1118,7 @@
     <script>
       let currentIndex = 1; // Start from the first actual slide
       const slider = document.getElementById("slider");
-      document.get;
+      // document.get;
       const slides = document.querySelectorAll(".slide");
       const totalSlides = slides.length;
 
@@ -987,27 +1315,118 @@
           .addEventListener("click", function () {
             updateAnimationDuration(currentDuration + 3); // Increase duration by 3s (slow down)
           });
+          // console.clear();
+          
+      // const menuBtn = document.getElementById("menu-btn");
+      // const menu = document.getElementById("menu");
 
-        const links = document.querySelectorAll(".navbar ul li a");
+      // menuBtn.addEventListener("click", () => {
+      //   menu.classList.toggle("hidden");
+      // });
+      let navbar = document.querySelector(".navbar");
+      let searchBox = document.querySelector(".search-box .bx-search");
+      let searchBoxCancel = document.querySelector(".search-box .bx-x");
 
-        links.forEach((link) => {
-          link.addEventListener("click", () => {
-            // Remove 'active' class from all links
-            links.forEach((l) => l.classList.remove("active"));
-
-            // Add 'active' class to the clicked link
-            link.classList.add("active");
-          });
-        });
+      searchBox.addEventListener("click", () => {
+        navbar.classList.toggle("showInput");
+        if (navbar.classList.contains("showInput")) {
+          searchBox.classList.replace("bx-search", "bx-x");
+        } else {
+          searchBox.classList.replace("bx-x", "bx-search");
+        }
       });
-      console.clear();
 
-      const menuBtn = document.getElementById('menu-btn');
-  const menu = document.getElementById('menu');
+      // sidebar open close js code
+      let navLinks = document.querySelector(".nav-links");
+      let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+      let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+      menuOpenBtn.onclick = function () {
+        navLinks.style.left = "0";
+      };
+      menuCloseBtn.onclick = function () {
+        navLinks.style.left = "-100%";
+      };
 
-  menuBtn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
+      // sidebar submenu open close js code
+      let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+      htmlcssArrow.onclick = function () {
+        navLinks.classList.toggle("show1");
+      };
+      let moreArrow = document.querySelector(".more-arrow");
+      moreArrow.onclick = function () {
+        navLinks.classList.toggle("view1");
+      };
+      let moreArrow2 = document.querySelector(".more-arrow1");
+      moreArrow2.onclick = function () {
+        navLinks.classList.toggle("view2");
+      };
+
+      let moreArrow3 = document.querySelector(".more-arrow2");
+      moreArrow3.onclick = function () {
+        navLinks.classList.toggle("view3");
+      };
+
+      let moreArrow4 = document.querySelector(".more-arrow3");
+      moreArrow4.onclick = function () {
+        navLinks.classList.toggle("view4");
+      };
+      let moreArrow5 = document.querySelector(".more-arrow4");
+      moreArrow5.onclick = function () {
+        navLinks.classList.toggle("view5");
+      };
+      let moreArrow6 = document.querySelector(".more-arrow5");
+      moreArrow6.onclick = function () {
+        navLinks.classList.toggle("view6");
+      };
+
+      let moreArrow7 = document.querySelector(".more-arrow6");
+      moreArrow7.onclick = function () {
+        navLinks.classList.toggle("view7");
+      };
+
+      let moreArrow8 = document.querySelector(".more-arrow7");
+      moreArrow8.onclick = function () {
+        navLinks.classList.toggle("view8");
+      };
+      let moreArrow9 = document.querySelector(".more-arrow8");
+      moreArrow9.onclick = function () {
+        navLinks.classList.toggle("view9");
+      };
+
+      let jsArrow = document.querySelector(".js-arrow");
+      jsArrow.onclick = function () {
+        navLinks.classList.toggle("show3");
+      };
+      let htmlcssArrow2 = document.querySelector(".htmlcss-arrow2");
+      htmlcssArrow2.onclick = function () {
+        navLinks.classList.toggle("show4");
+      };
+      let htmlcssArrow3 = document.querySelector(".htmlcss-arrow3");
+      htmlcssArrow3.onclick = function () {
+        navLinks.classList.toggle("show5");
+      };
+      let htmlcssArrow4 = document.querySelector(".htmlcss-arrow4");
+      htmlcssArrow4.onclick = function () {
+        navLinks.classList.toggle("show6");
+      };
+      let htmlcssArrow5 = document.querySelector(".htmlcss-arrow5");
+      htmlcssArrow5.onclick = function () {
+        navLinks.classList.toggle("show7");
+      };
+      let htmlcssArrow6 = document.querySelector(".htmlcss-arrow6");
+      htmlcssArrow6.onclick = function () {
+        navLinks.classList.toggle("show8");
+      };
+      let htmlcssArrow7 = document.querySelector(".htmlcss-arrow7");
+      htmlcssArrow7.onclick = function () {
+        navLinks.classList.toggle("show9");
+      };
+      let htmlcssArrow8 = document.querySelector(".htmlcss-arrow8");
+      htmlcssArrow8.onclick = function () {
+        navLinks.classList.toggle("show10");
+      };
+    });
     </script>
   </body>
 </html>
+<!-- </html> -->
