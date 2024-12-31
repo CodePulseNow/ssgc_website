@@ -1289,6 +1289,9 @@ nav .navbar .links li:hover .htmlCss-sub-menu8 {
   .logo img{
     width: auto !important;
   }
+  h6{
+    visibility:visible !important;
+  }
   .slider-container {
     height: 170px;
     border-radius: 10px;
