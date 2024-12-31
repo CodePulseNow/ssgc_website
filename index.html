@@ -77,28 +77,28 @@
     </header>
 
     <!-- Navbar Section -->
-    <nav class="fixed top-7 w-full z-20 px-4">
+    <nav class="fixed top-7 w-full z-20">
       <div class="navbar">
         <i class="bx bx-menu"></i>
         <div class="logo-container flex items-center">
           <div class="logo">
             <img src="pics/SSGC_Log.png" alt="SSGC logo" class="h-10" />
           </div>
-          <div class="logo-text hidden md:block">
-            <h6>Service with Smile</h6>
-            <h6 class="uppercase font-bold">
+          <div class="logo-text md:block">
+            <h6 class="hidden md:block">Service with Smile</h6>
+            <h6 class="uppercase hidden md:block font-bold">
               Sui Southern Gas Company Limited
             </h6>
+            <h6 class="md:hidden font-bold">Sui Southern Gas Company</h6>
           </div>
         </div>
-        <!-- <div class="logo"><a href="#"> <img src="./pics/SSGC_Log.png" alt="" srcset="" class="h-10"> </a></div> -->
         <div class="nav-links">
           <div class="sidebar-logo">
             <span class="logo-name">SSGC</span>
             <i class="bx bx-x"></i>
           </div>
           <ul class="links">
-            <li><a href="#">HOME</a></li>
+            <li><a href="#">Home</a></li>
             <li>
               <a href="#">About Us</a>
               <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
@@ -207,10 +207,8 @@
             </li>
             <li>
               <a href="#">Customer Management</a>
-              <!-- <i class="bx bxs-chevron-down js-arrow arrow"></i> -->
               <i class="bx bxs-chevron-down htmlcss-arrow2 arrow"></i>
 
-              <!-- <ul class="js-sub-menu sub-menu"> -->
               <ul class="htmlCss-sub-menu2 sub-menu">
                 <li><a href="#">New Gas Connection Application Form</a></li>
                 <li><a href="#">Digital Services</a></li>
@@ -814,7 +812,6 @@
         </div>
       </div>
 
-      <!-- <h2 class="business-partner-heading">Our Business Partners</h2> -->
       <h2 class="business-partner-heading flex justify-center">
         Our Business Partners
       </h2>
@@ -1315,118 +1312,109 @@
           .addEventListener("click", function () {
             updateAnimationDuration(currentDuration + 3); // Increase duration by 3s (slow down)
           });
-          // console.clear();
-          
-      // const menuBtn = document.getElementById("menu-btn");
-      // const menu = document.getElementById("menu");
+        let navbar = document.querySelector(".navbar");
+        let searchBox = document.querySelector(".search-box .bx-search");
+        let searchBoxCancel = document.querySelector(".search-box .bx-x");
 
-      // menuBtn.addEventListener("click", () => {
-      //   menu.classList.toggle("hidden");
-      // });
-      let navbar = document.querySelector(".navbar");
-      let searchBox = document.querySelector(".search-box .bx-search");
-      let searchBoxCancel = document.querySelector(".search-box .bx-x");
+        searchBox.addEventListener("click", () => {
+          navbar.classList.toggle("showInput");
+          if (navbar.classList.contains("showInput")) {
+            searchBox.classList.replace("bx-search", "bx-x");
+          } else {
+            searchBox.classList.replace("bx-x", "bx-search");
+          }
+        });
 
-      searchBox.addEventListener("click", () => {
-        navbar.classList.toggle("showInput");
-        if (navbar.classList.contains("showInput")) {
-          searchBox.classList.replace("bx-search", "bx-x");
-        } else {
-          searchBox.classList.replace("bx-x", "bx-search");
-        }
+        // sidebar open close js code
+        let navLinks = document.querySelector(".nav-links");
+        let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+        let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+        menuOpenBtn.onclick = function () {
+          navLinks.style.left = "0";
+        };
+        menuCloseBtn.onclick = function () {
+          navLinks.style.left = "-100%";
+        };
+
+        // sidebar submenu open close js code
+        let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+        htmlcssArrow.onclick = function () {
+          navLinks.classList.toggle("show1");
+        };
+        let moreArrow = document.querySelector(".more-arrow");
+        moreArrow.onclick = function () {
+          navLinks.classList.toggle("view1");
+        };
+        let moreArrow2 = document.querySelector(".more-arrow1");
+        moreArrow2.onclick = function () {
+          navLinks.classList.toggle("view2");
+        };
+
+        let moreArrow3 = document.querySelector(".more-arrow2");
+        moreArrow3.onclick = function () {
+          navLinks.classList.toggle("view3");
+        };
+
+        let moreArrow4 = document.querySelector(".more-arrow3");
+        moreArrow4.onclick = function () {
+          navLinks.classList.toggle("view4");
+        };
+        let moreArrow5 = document.querySelector(".more-arrow4");
+        moreArrow5.onclick = function () {
+          navLinks.classList.toggle("view5");
+        };
+        let moreArrow6 = document.querySelector(".more-arrow5");
+        moreArrow6.onclick = function () {
+          navLinks.classList.toggle("view6");
+        };
+
+        let moreArrow7 = document.querySelector(".more-arrow6");
+        moreArrow7.onclick = function () {
+          navLinks.classList.toggle("view7");
+        };
+
+        let moreArrow8 = document.querySelector(".more-arrow7");
+        moreArrow8.onclick = function () {
+          navLinks.classList.toggle("view8");
+        };
+        let moreArrow9 = document.querySelector(".more-arrow8");
+        moreArrow9.onclick = function () {
+          navLinks.classList.toggle("view9");
+        };
+
+        let jsArrow = document.querySelector(".js-arrow");
+        jsArrow.onclick = function () {
+          navLinks.classList.toggle("show3");
+        };
+        let htmlcssArrow2 = document.querySelector(".htmlcss-arrow2");
+        htmlcssArrow2.onclick = function () {
+          navLinks.classList.toggle("show4");
+        };
+        let htmlcssArrow3 = document.querySelector(".htmlcss-arrow3");
+        htmlcssArrow3.onclick = function () {
+          navLinks.classList.toggle("show5");
+        };
+        let htmlcssArrow4 = document.querySelector(".htmlcss-arrow4");
+        htmlcssArrow4.onclick = function () {
+          navLinks.classList.toggle("show6");
+        };
+        let htmlcssArrow5 = document.querySelector(".htmlcss-arrow5");
+        htmlcssArrow5.onclick = function () {
+          navLinks.classList.toggle("show7");
+        };
+        let htmlcssArrow6 = document.querySelector(".htmlcss-arrow6");
+        htmlcssArrow6.onclick = function () {
+          navLinks.classList.toggle("show8");
+        };
+        let htmlcssArrow7 = document.querySelector(".htmlcss-arrow7");
+        htmlcssArrow7.onclick = function () {
+          navLinks.classList.toggle("show9");
+        };
+        let htmlcssArrow8 = document.querySelector(".htmlcss-arrow8");
+        htmlcssArrow8.onclick = function () {
+          navLinks.classList.toggle("show10");
+        };
       });
-
-      // sidebar open close js code
-      let navLinks = document.querySelector(".nav-links");
-      let menuOpenBtn = document.querySelector(".navbar .bx-menu");
-      let menuCloseBtn = document.querySelector(".nav-links .bx-x");
-      menuOpenBtn.onclick = function () {
-        navLinks.style.left = "0";
-      };
-      menuCloseBtn.onclick = function () {
-        navLinks.style.left = "-100%";
-      };
-
-      // sidebar submenu open close js code
-      let htmlcssArrow = document.querySelector(".htmlcss-arrow");
-      htmlcssArrow.onclick = function () {
-        navLinks.classList.toggle("show1");
-      };
-      let moreArrow = document.querySelector(".more-arrow");
-      moreArrow.onclick = function () {
-        navLinks.classList.toggle("view1");
-      };
-      let moreArrow2 = document.querySelector(".more-arrow1");
-      moreArrow2.onclick = function () {
-        navLinks.classList.toggle("view2");
-      };
-
-      let moreArrow3 = document.querySelector(".more-arrow2");
-      moreArrow3.onclick = function () {
-        navLinks.classList.toggle("view3");
-      };
-
-      let moreArrow4 = document.querySelector(".more-arrow3");
-      moreArrow4.onclick = function () {
-        navLinks.classList.toggle("view4");
-      };
-      let moreArrow5 = document.querySelector(".more-arrow4");
-      moreArrow5.onclick = function () {
-        navLinks.classList.toggle("view5");
-      };
-      let moreArrow6 = document.querySelector(".more-arrow5");
-      moreArrow6.onclick = function () {
-        navLinks.classList.toggle("view6");
-      };
-
-      let moreArrow7 = document.querySelector(".more-arrow6");
-      moreArrow7.onclick = function () {
-        navLinks.classList.toggle("view7");
-      };
-
-      let moreArrow8 = document.querySelector(".more-arrow7");
-      moreArrow8.onclick = function () {
-        navLinks.classList.toggle("view8");
-      };
-      let moreArrow9 = document.querySelector(".more-arrow8");
-      moreArrow9.onclick = function () {
-        navLinks.classList.toggle("view9");
-      };
-
-      let jsArrow = document.querySelector(".js-arrow");
-      jsArrow.onclick = function () {
-        navLinks.classList.toggle("show3");
-      };
-      let htmlcssArrow2 = document.querySelector(".htmlcss-arrow2");
-      htmlcssArrow2.onclick = function () {
-        navLinks.classList.toggle("show4");
-      };
-      let htmlcssArrow3 = document.querySelector(".htmlcss-arrow3");
-      htmlcssArrow3.onclick = function () {
-        navLinks.classList.toggle("show5");
-      };
-      let htmlcssArrow4 = document.querySelector(".htmlcss-arrow4");
-      htmlcssArrow4.onclick = function () {
-        navLinks.classList.toggle("show6");
-      };
-      let htmlcssArrow5 = document.querySelector(".htmlcss-arrow5");
-      htmlcssArrow5.onclick = function () {
-        navLinks.classList.toggle("show7");
-      };
-      let htmlcssArrow6 = document.querySelector(".htmlcss-arrow6");
-      htmlcssArrow6.onclick = function () {
-        navLinks.classList.toggle("show8");
-      };
-      let htmlcssArrow7 = document.querySelector(".htmlcss-arrow7");
-      htmlcssArrow7.onclick = function () {
-        navLinks.classList.toggle("show9");
-      };
-      let htmlcssArrow8 = document.querySelector(".htmlcss-arrow8");
-      htmlcssArrow8.onclick = function () {
-        navLinks.classList.toggle("show10");
-      };
-    });
     </script>
   </body>
 </html>
-<!-- </html> -->
