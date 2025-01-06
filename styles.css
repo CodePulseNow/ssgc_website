@@ -1674,7 +1674,7 @@ nav .navbar .links li:hover .htmlCss-sub-menu8 {
   }
 }
 
-@media (min-width: 951px) and (max-width: 1299px) {
+@media (min-width: 951px) and (max-width: 1250px) {
   .navbar .bx-menu {
     display: block;
   }
