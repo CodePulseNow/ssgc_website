@@ -119,6 +119,10 @@ nav .navbar .links li .sub-menu {
   margin-left: -40px;
 }
 
+nav .navbar .links li .sub-menu .more .sub-menu{
+  margin-left: 0px;
+}
+
 nav .navbar .links li:hover .htmlCss-sub-menu,
 nav .navbar .links li:hover .js-sub-menu,
 nav .navbar .links li:hover .htmlCss-sub-menu2,
@@ -1416,7 +1420,6 @@ nav .navbar .links li:hover .htmlCss-sub-menu8 {
   .menu-item span {
     bottom: 50px !important;
     left: -90%;
-    /* color: YELLOW; */
     font-size: 11px !important;
   }
 
@@ -1492,6 +1495,8 @@ nav .navbar .links li:hover .htmlCss-sub-menu8 {
     top: 0;
     box-shadow: none;
     display: none;
+    margin-left: 0px;
+
   }
 
   nav .navbar .links li .sub-menu li {
@@ -1648,9 +1653,7 @@ nav .navbar .links li:hover .htmlCss-sub-menu8 {
     font-size: x-small;
   }
   .menu-item span {
-    /* bottom: 49px; */
     left: -150%;
-    /* font-size: 14.5px; */
   }
 }
 @media (max-width: 590px) {
@@ -1659,21 +1662,45 @@ nav .navbar .links li:hover .htmlCss-sub-menu8 {
     margin: auto;
   }
   .menu-item span {
-    /* bottom: 49px; */
     left: -160%;
-    /* font-size: 14.5px; */
   }
 }
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
   h6 {
     visibility: hidden;
   }
   .logo img {
     width: 100px;
   }
-}
+} */
 
+@media (min-width: 1251px) and (max-width: 1500px) {
+  nav .navbar {
+    /* color: green; */
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  nav .navbar .links {
+    /* display: flex; */
+    margin-left: 0px;
+  }
+  nav .navbar .links li a {
+    font-size: 11.5px;
+  }
+  .navbar .links li .sub-menu a {
+    font-size: 9px;
+  }
+  nav .navbar .links li .sub-menu {
+    margin-left: -78px;
+  }
+  nav .navbar .links li .submenus {
+    margin-left: -30px;
+  }
+  nav .navbar .links li .sub-menu .more .sub-menu{
+    /* margin-left: 0px; */
+  }
+}
 @media (min-width: 951px) and (max-width: 1250px) {
   .navbar .bx-menu {
     display: block;
@@ -1709,6 +1736,9 @@ nav .navbar .links li:hover .htmlCss-sub-menu8 {
     align-items: center;
     justify-content: space-between;
   }
+  nav .navbar .links li .sub-menu .more .sub-menu{
+    margin-left: 0px !important;
+  }
 
   .sidebar-logo .logo-name {
     font-size: 25px;
@@ -1740,6 +1770,7 @@ nav .navbar .links li:hover .htmlCss-sub-menu8 {
     top: 0;
     box-shadow: none;
     display: none;
+    margin-left: 0px;
   }
 
   nav .navbar .links li .sub-menu li {
