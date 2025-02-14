@@ -376,7 +376,7 @@ nav .navbar .links li:hover .htmlCss-sub-menu8 {
 .menu-item {
   font-size: 14px;
   /* background: #f4f4f4; Keeping existing color */
-  padding: 15px; /* Keeping existing padding */
+  /* padding: 15px; Keeping existing padding */
   /* text-align: center; */
   border-radius: 8px; /* Keeping existing styling */
   margin-bottom: 10px; /* Keeping margin-bottom */
@@ -431,15 +431,15 @@ padding: 10px;
 
 /* For small screens (mobile devices) */
 @media (max-width: 480px) {
-  .logo-text{
+  /* .logo-text{
     font-size:xx-small
-  }
+  } */
   .text-center {
     text-align: right;
 }
-  .logo img {
+  /* .logo img {
     height: 23px !important;
-  }
+  } */
   .menu-item {
     flex: 1 1 100%;
     max-width: none;
@@ -543,7 +543,7 @@ padding: 10px;
 }
 
 .carousel-title {
-  font-size: 24px;
+  font-size: 19px;
   font-weight: bold;
   color: #1c2b65;
   margin-top: 20px;
@@ -1101,7 +1101,7 @@ padding: 10px;
 }
 
 .locate-us-heading {
-  font-size: 24px;
+  font-size: 19px;
   font-weight: bold;
   color: #1c2b65;
   margin-bottom: 20px;
@@ -1162,7 +1162,7 @@ padding: 10px;
 }
 
 .business-partner-heading {
-  font-size: 24px;
+  font-size: 19px;
   font-weight: bold;
   color: #1c2b65;
   position: relative;
@@ -1196,7 +1196,7 @@ padding: 10px;
 }
 
 .slider-image {
-  height: 250px;
+  height: 225px;
   margin: auto;
   position: relative;
   width: 73%;
@@ -1292,17 +1292,17 @@ padding: 10px;
 }
 
 .focal-person-info h3 {
-  font-size: 24px;
+  font-size: 19px;
   font-weight: bold;
   color: #1c2b65;
-  margin-top: -52px;
+  margin-top: -20px;
   margin-bottom: 30px;
   position: relative;
   text-transform: uppercase;
 }
 
 .focal-person-investor h3 {
-  font-size: 24px;
+  font-size: 19px;
   font-weight: bold;
   color: #1c2b65;
   margin-bottom: 30px;
@@ -1535,7 +1535,8 @@ padding: 10px;
  
 
   .menu-item {
-    margin: 3px 20px;
+    /* margin: 3px 20px; */
+    margin-top: 9px;
   }
 
   .menu-item img {
@@ -1593,13 +1594,12 @@ padding: 10px;
     width: 80%;
   }
 
-  .focal-person-info h3,
-  .focal-person-investor h3 {
+  .focal-person-info h3 {
     margin: 10px 10px 20px 10px;
   }
 
   .focal-persons-section {
-    margin: -32px 22px;
+    margin: 20px 22px;
     padding: 0px;
   }
 
@@ -1615,7 +1615,7 @@ padding: 10px;
 
   .footer-section p {
     margin: 13px 0px;
-    font-size: 10.5px;
+    font-size: 14px;
     line-height: 17px;
   }
 
@@ -1631,7 +1631,7 @@ padding: 10px;
   .footer-section ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 10.5px;
+    font-size: 14px;
   }
 
   .footer-logo {
