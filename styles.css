@@ -71,6 +71,25 @@ nav .navbar .links li {
   list-style: none;
   padding: 0 7px;
 }
+nav .navbar .links li.more {
+  width: 100%; /* Ensures that the list item takes full width */
+}
+
+nav .navbar .links li.more span {
+  display: flex; /* Enables flexbox inside the span */
+  justify-content: space-between; /* Pushes anchor to the left and icon to the right */
+  align-items: center; /* Vertically aligns the anchor and icon */
+  width: 100%; /* Ensures the span takes the full width */
+}
+
+nav .navbar .links li.more a {
+  text-decoration: none; /* Optional: Remove underline from anchor */
+}
+
+nav .navbar .links li.more i {
+  margin-left: 10px; /* Optional: Adds space between anchor and icon */
+}
+
 
 nav .navbar .links li a {
   height: 100%;
@@ -117,9 +136,6 @@ nav .navbar .links li .sub-menu {
   margin-left: -40px;
 }
 
-.more span{
-  display: flex;
-}
 
 nav .navbar .links li .sub-menu li:hover {
   background-color: #7dbec0; /* Light gray background on hover */
